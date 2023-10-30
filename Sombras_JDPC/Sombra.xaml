@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Sombras_JDPC.Sombra"
+             xmlns:sh="clr-namespace:Sharpnado.Shades;assembly=Sharpnado.Shadows">
+
+    <Grid>
+    <StackLayout Orientation="Vertical"
+                 VerticalOptions="Center"
+                 Spacing="30">
+        <sh:Shadows CornerRadius="50" Shades="{sh:SingleShade Offset='0,10',Opacity=0.7,Color=Tomato}">
+                <ImageButton WidthRequest="100"
+                         HeightRequest="100"
+                         HorizontalOptions="Center"
+                         VerticalOptions="Center"
+                         BackgroundColor="Tomato"
+                         CornerRadius="50"
+                             Source="https://i.ibb.co/wYV7L8k/pikachu.png"
+                             Padding="17">
+                </ImageButton>
+        </sh:Shadows>
+            <sh:Shadows CornerRadius="15" Shades="{sh:SingleShade Offset='0,10',Opacity=0.7,Color=#FFCE56}">
+                <Frame WidthRequest="60"
+                         HeightRequest="60"
+                         HorizontalOptions="Center"
+                         VerticalOptions="Center"
+                         BackgroundColor="#FFCE56"
+                         CornerRadius="15">
+                    <Image Source="https://i.ibb.co/68fcqkk/avatar.png">
+                        </Image>
+                             
+                </Frame>
+            </sh:Shadows>
+
+            <sh:Shadows CornerRadius="15" Shades="{sh:SingleShade Offset='0,8',Opacity=0.7,Color=#FF8B00}">
+                <BoxView WidthRequest="60"
+                         HeightRequest="60"
+                         HorizontalOptions="Center"
+                         VerticalOptions="Center"
+                         BackgroundColor="#FF8B00"
+                         CornerRadius="15">
+             
+
+                </BoxView>
+            </sh:Shadows>
+
+        </StackLayout>
+    </Grid>
+</ContentPage>
